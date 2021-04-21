@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-lg-4 col-sm-6 p-2" *ngFor="let product of productsArray">
+            <div class="card" style="width: 18rem;">
+                <h1 class="card-title text-center">{{product.name}}</h1>
+                <div class="card-body">
+                  <p class="card-text">sku : {{product.sku}}</p>
+                  <p class="card-text">price : {{product.price}}</p>
+                  
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-center">
+                   <button type="button" class="btn btn-success" (click)="addToCart(product)">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
